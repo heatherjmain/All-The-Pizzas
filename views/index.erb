@@ -1,0 +1,15 @@
+<h1>All the pizzas...</h1>
+
+<br>
+
+<!-- we have an array of pizzas of unknown length (taken from controller) -->
+<!-- we will need a loop to pull this data out -->
+<% for pizza in @pizzas do %>
+
+  <p>Order Number: <%= pizza.id() %></p>
+  <p>Name: <%= pizza.pretty_name() %></p>
+  <p>Order: <%= pizza.quantity() %> x <%= pizza.topping() %></p>
+  <p><a href="/pizzas/<%= pizza.id %>">Show order</a></p>
+  <hr/>
+
+<% end %>

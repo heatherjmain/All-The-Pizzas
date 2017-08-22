@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Shop</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <div>
+    <img src="/pizza_shop_logo.png" alt="All The Pizza Logo" width=300px />
+  </div>
+
+  <nav>
+    <ul>
+
+      <li><a href="/home"><img src="/pizza_home_button.png",alt="Home button", style="width:100px; padding: 30px;" /></a></li>
+
+      <li><a href="/pizzas"><img src="http://www.clker.com/cliparts/Z/K/t/v/5/o/check-list-hi.png" alt="Current orders" style="width: 60px; padding: 30px;" /></a></li>
+
+      <li><a href="/pizzas/new"><img src="http://www.freeiconspng.com/uploads/pizza-png-25.png" alt="Order a pizza!" style="width: 120px; padding: 30px;" /></a></li>
+    </ul>
+  </nav>
+
+  <%= yield %>
+</body>
+
+<footer>All The Pizzas &copy 2017</footer>
+</html>

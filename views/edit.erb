@@ -1,0 +1,27 @@
+<form action="/pizzas/<%= @pizza.id %>" method="POST">
+
+  <label for="first-name-field">First name:</label>
+  <!-- name must match exactly as is in model and db -->
+  <!-- id(below) must equal label for "name"(above).  This is for visually impaired person-->
+  <input type="text" name="first_name" id="first-name-field" value="<%= @pizza.first_name %>" />
+
+  <label for="last-name-field">Last Name:</label>
+  <input id="last-name-field" type="text" name="last_name" value="<%= @pizza.last_name %>" />
+
+
+  <label for="pizza-select">Select a pizza:</label>
+  <select id="pizza-select" name="topping">
+    <option <%= "selected" if @pizza.topping == "Margherita" %> value="Margherita">Margherita</option>
+    <option <%= "selected" if @pizza.topping == "Calzone" %> value="Calzone">Calzone</option>
+    <option <%= "selected" if @pizza.topping == "Mushroom" %> value="Mushroom">Mushroom</option>
+    <option <%= "selected" if @pizza.topping == "Haiwian" %> value="Haiwian">Haiwian</option>
+
+  </select>
+
+
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" type="number" name="quantity" value="<%= @pizza.quantity %>"/>
+
+  <input type="submit" value="Edit Pizza">
+
+</form>

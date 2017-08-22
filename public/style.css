@@ -1,0 +1,75 @@
+body{
+  background-color: white;
+  font-family: fantasy;
+}
+
+div {
+    text-align: center;
+}
+
+nav{
+  display:inline;
+  /*width:100px;*/
+  /*padding:0,50,0,100;*/
+  text-align:center
+}
+
+
+h1{
+  /*text-align: center;*/
+  /*text-decoration: underline;*/
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.order {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.your_order {
+  color: red;
+  font-size: 30px;
+  line-height: 10px;
+}
+
+.about_us {
+  line-height: normal;
+}
+
+li{
+  display: inline;
+}
+
+#change_order {
+  width: 100px;
+  height: 320px;
+  font-size: 400px;
+}
+
+#delete {
+  width: 100px;
+  height: 320px;
+  font-size: 400px;
+}
+
+#order_pizza {
+  width: 100px;
+  height: 320px;
+  font-size: 400px;
+}
+
+form {
+  text-align: center;
+}
+
+p {
+  line-height: 10px;
+}
+
+footer {
+  text-align: right;
+  font-size: 15px;
+}
